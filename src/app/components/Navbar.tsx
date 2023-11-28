@@ -3,7 +3,7 @@ import logo from "../assets/landing/landing/logo.png";
 const Navbar = () => {
   return (
     <div className="w-full">
-      <div className=" p-3 shadow-lg  md:m-auto md: w-11/12 flex items-center justify-between ">
+      <div className=" p-3 shadow-lg px-10  md:m-auto  flex items-center justify-between ">
 
         <div className="flex items-center font-bold">
           <Image alt="" height={40} width={40} src={logo}></Image>
