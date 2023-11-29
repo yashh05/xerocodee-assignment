@@ -5,7 +5,7 @@ import cloudPng from "../../assets/landing/landing/cloud.png";
 import Image from "next/image";
 
 const nunito = Nunito({
-  weight: ["400", "600"],
+  weight: ["400", "600","800"],
   subsets: ["latin"],
 });
 
@@ -20,7 +20,7 @@ const SelfServe = () => {
   const Navbar = () => {
     return (
       <ul
-        className={` text-gray-700  flex  gap-10 ${nunito.className} font-bold `}
+        className={` text-gray-700 text-xs md:text-base  flex justify-around md:justify-normal md:gap-10 ${nunito.className} font-bold `}
       >
         <li
           className={`${
@@ -49,19 +49,19 @@ const SelfServe = () => {
 
   const YourCloud = () => {
     return (
-      <div className=" flex items-center ">
+      <div className=" flex flex-col md:flex-row items-center ">
         <Image
           src={cloudPng}
           alt=""
-          className=" flex-1 h-[350px] w-[350px]"
+          className=" flex-1 w-[250px] h-[350px] md:w-[350px]"
         ></Image>
-        <div className=" flex-1">
+        <div className="w-10/12 md:w-auto flex-1">
           <h1
-            className={`${poppins.className} text-3xl font-semibold text-gray-900 `}
+            className={`${poppins.className} text-xl text-center  md:text-start md:text-3xl font-bold text-gray-900 `}
           >
             In Your Cloud
           </h1>
-          <p className="text-gray-600 mt-7">
+          <p className="text-gray-600 mt-7 text-center md:text-start tracking-wider">
             Your infrastructure runs on your AWS or GCP account. Never get
             locked in. Infinitely scalable.Azure support (coming soon)
           </p>

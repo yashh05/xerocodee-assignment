@@ -19,13 +19,13 @@ const Advantages = () => {
 
  
   return (
-    <div className=" flex flex-col gap-28 w-10/12 ">
+    <div className=" flex flex-col border rounded-lg py-5 md:border-none gap-28 w-11/12 md:w-10/12 ">
       <h1
-        className={`${poppins.className} text-center font-semibold text-gray-900 text-4xl`}
+        className={`${poppins.className} text-center font-semibold text-gray-900 text-lg md:text-4xl`}
       >
         The Xerocodee way
         <span className=" inline-block ml-4">
-          <Image src={landing} alt="" />
+          <Image src={landing} alt="" className="w-10 md:w-auto" />
         </span>
       </h1>
 

@@ -16,7 +16,7 @@ const poppins = Poppins({
 });
 const Advantage1 = () => {
   return (
-    <div className="flex flex-col items-center gap-20 ">
+    <div className="flex flex-col items-center gap-10 md:gap-20 ">
       <h1
         className={`${poppins.className} text-center text-4xl font-semibold text-gray-800`}
       >
@@ -25,10 +25,10 @@ const Advantage1 = () => {
       </h1>
 
       <div className="text-gray-800">
-        <h1 className="text-center text-3xl font-semibold ">
+        <h1 className="text-center text-xl md:text-3xl font-semibold ">
           Self Serve Infrastructure
         </h1>
-        <p className="mt-5">
+        <p className="mt-5 text-center text-sm md:text-base text-gray-600">
           Accelerate by self-serving production-ready infrastructure and
           customize as you scale.
         </p>
