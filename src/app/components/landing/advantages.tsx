@@ -1,12 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import landing from "../../assets/landing/landing/landing.svg";
-import {Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Advantage1 from "./advantage1";
 import Advantage2 from "./advantage2";
 import Advantage3 from "./advantage3";
-
-
 
 const poppins = Poppins({
   weight: ["400", "600", "700"],
@@ -15,9 +13,6 @@ const poppins = Poppins({
 });
 
 const Advantages = () => {
-
-
- 
   return (
     <div className=" flex flex-col border rounded-lg py-5 md:border-none gap-28 w-11/12 md:w-10/12 ">
       <h1
@@ -32,7 +27,6 @@ const Advantages = () => {
       <Advantage1 />
       <Advantage2 />
       <Advantage3 />
-
     </div>
   );
 };

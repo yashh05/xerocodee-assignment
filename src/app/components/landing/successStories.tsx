@@ -102,15 +102,16 @@ const SuccessCard2: React.FC<SuccessCardProps> = ({
         <div className=" w-24 h-24 border-primary flex items-center justify-center border-8 rounded-full">
           <Image src={avatar} alt="" />
         </div>
-        </div>
-        <p className=" text-gray-600 text-center">
-          <span className="text-primary text-6xl font-extrabold ">“</span>{comment}
-        </p>
-        <div className="text-center">
-          <h1 className=" font-bold text-xl text-gray-700">-{name}</h1>
-          <p className="text-sm text-gray-600">{designation}</p>
-        </div>
       </div>
+      <p className=" text-gray-600 text-center">
+        <span className="text-primary text-6xl font-extrabold ">“</span>
+        {comment}
+      </p>
+      <div className="text-center">
+        <h1 className=" font-bold text-xl text-gray-700">-{name}</h1>
+        <p className="text-sm text-gray-600">{designation}</p>
+      </div>
+    </div>
   );
 };
 

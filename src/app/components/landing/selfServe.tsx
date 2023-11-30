@@ -5,7 +5,7 @@ import cloudPng from "../../assets/landing/landing/cloud.png";
 import Image from "next/image";
 
 const nunito = Nunito({
-  weight: ["400", "600","800"],
+  weight: ["400", "600", "800"],
   subsets: ["latin"],
 });
 
@@ -73,7 +73,13 @@ const SelfServe = () => {
   return (
     <div className=" m-auto">
       <Navbar />
-      {section === 1 ? <YourCloud /> : section===2 ? <YourCloud /> : section===3 ? <YourCloud /> : null}
+      {section === 1 ? (
+        <YourCloud />
+      ) : section === 2 ? (
+        <YourCloud />
+      ) : section === 3 ? (
+        <YourCloud />
+      ) : null}
     </div>
   );
 };

@@ -1,22 +1,18 @@
 import Image, { StaticImageData } from "next/image";
-import withpic from "./assets/landing/landing/with.png";
-import without from "./assets/landing/landing/without.png";
+import withpic from "../../assets/landing/landing/with.png";
+import without from "../../assets/landing//landing/without.png"
 import { Nunito, Poppins } from "next/font/google";
-import infrastructure from "./assets/landing/landing/infrastructure.png";
-import networking from "./assets/landing/landing/networking.png";
-import security from "./assets/landing/landing/cyber-security.png";
-import applications from "./assets/landing/landing/development.png";
-import realTime from "./assets/landing/landing/real-time.png";
-import collabPng from "./assets/landing/landing/collaboration.png";
-import Advantages from "./components/landing/advantages";
-import hero from "./assets/landing/landing/hero.png";
-import SuccessStories from "./components/landing/successStories";
-import NewsLetter from "./components/landing/newsLetter";
-import greenhousePng from "./assets/landing/landing/greenhouse.png";
-import brsrPng from "./assets/landing/landing/bsr.png";
-import cdpPng from "./assets/landing/landing/cdp.png";
-import ipccPng from "./assets/landing/landing/ipcc.png";
-import Savehunderedhour from "./components/landing/savehunderedhour";
+import infrastructure from "../../assets/landing/landing/infrastructure.png";
+import networking from "../../assets/landing/landing/networking.png";
+import security from "../../assets/landing/landing/cyber-security.png";
+import applications from "../../assets/landing/landing/development.png";
+import realTime from "../../assets/landing/landing/real-time.png";
+import collabPng from "../../assets/landing/landing/collaboration.png";
+import Advantages from "./advantages";
+import hero from "../../assets/landing/landing/hero.png";
+import SuccessStories from "./successStories";
+import NewsLetter from "./newsLetter";
+import Savehunderedhour from "./savehunderedhour";
 
 const nunito = Nunito({
   weight: ["400", "600", "700"],
@@ -90,44 +86,6 @@ const Dashboard = () => {
           Get Started Now
         </button>
         <Image alt="hero" src={hero} className=" w-full" />
-        {/* <div className="flex w-4/5 justify-between md:full">
-          <div>
-            <Image src={greenhousePng} alt="" className=" w-20"></Image>
-            <Image
-              src={greenhousePng}
-              alt=""
-              width={130}
-              className="mt-4"
-            ></Image>
-          </div>
-          <div>
-            <Image src={brsrPng} alt="" className=" w-20"></Image>
-            <Image
-              src={brsrPng}
-              alt=""
-              width={130}
-              className="mt-4"
-            ></Image>
-          </div>
-          <div>
-            <Image src={cdpPng} alt="" className=" w-20"></Image>
-            <Image
-              src={cdpPng}
-              alt=""
-              width={130}
-              className="mt-4"
-            ></Image>
-          </div>
-          <div>
-            <Image src={ipccPng} alt="" className="w-20"></Image>
-            <Image
-              src={ipccPng}
-              alt=""
-              width={130}
-              className="mt-4"
-            ></Image>
-          </div>
-        </div> */}
       </div>
 
       <div className=" flex w-full flex-col gap-8 items-center">
@@ -178,7 +136,7 @@ const Dashboard = () => {
           <span className="text-primary">scaling teams</span>
         </p>
 
-        <div className="w-10/12 grid grid-cols-1 md:grid-cols-2 gap-14 m-auto">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-28 m-auto">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
@@ -199,7 +157,7 @@ const Dashboard = () => {
             <h1 className="font-semibold text-xl md:text-4xl">
               Real-Time Risk Monitoring
             </h1>
-            <p className="tracking-wider">
+            <p className="md:tracking-wider md:text-xl">
               Real-time risk monitoring across your infrastructure and
               application ecosystem will help you maintain ongoing compliance
               with more than 05+ different regulatory standards.
@@ -213,7 +171,7 @@ const Dashboard = () => {
             <h1 className="font-semibold text-xl md:text-4xl">
               Collaborative workflows
             </h1>
-            <p className="md:tracking-wider">
+            <p className="md:tracking-wider md:text-xl">
               Share artifacts easily and collaborate with team members,
               auditors, and pen testers via automated procedures. To manage
               daily compliance with automatic notifications and reminders,

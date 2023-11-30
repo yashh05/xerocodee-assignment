@@ -13,10 +13,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="p-3 w-full shadow px-4 md:px-10 md:m-auto flex items-center justify-between">
-      <div className="flex items-center font-bold">
+    <div className="p-3 w-full shadow px-4 md:py-3 md:px-10 md:m-auto flex items-center justify-between">
+      <div className="flex items-center md:gap-2 font-bold">
         <Image alt="" height={40} width={40} src={logo} />
-        <span className="hidden md:block text-lg -ml-2">erocodee.</span>
+        <span className="hidden md:block text-lg md:text-3xl -ml-2">erocodee.</span>
       </div>
 
       {/* Hamburger icon for small screens */}
@@ -26,7 +26,7 @@ const Navbar = () => {
         </button>
       </div>
       
-      <div className="md:flex gap-3 list-none hidden ">
+      <div className="md:flex gap-3 md:text-xl list-none hidden ">
             <a href=""> <li className=" hover:underline transition-transform transition-300">Home</li></a>
             <a href=""><li>Team</li></a>
             <a href=""><li>Contact</li></a>
